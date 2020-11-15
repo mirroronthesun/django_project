@@ -67,8 +67,12 @@ WSGI_APPLICATION = 'hoonstagram.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'likelion',
+        'USER': 'mirroronthesun',
+        'PASSWORD': 'ektksek12!',
+        'HOST': 'test-pg.ce1w1ulkux2v.us-east-2.rds.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
